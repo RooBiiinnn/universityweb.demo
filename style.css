@@ -1,0 +1,462 @@
+body {
+    margin: 0;
+}
+
+#mainheader {
+
+  width: 100%;
+  height: 700px;
+  background-image: url("Images/bg.jpg");
+
+  background-size: 100% 700px;
+  background-repeat: no-repeat;
+  
+  
+
+}
+
+
+
+#logos {
+    width: 12%;
+    height: auto;
+    position: absolute;
+   
+    left: 50px;
+    top: 35px;
+   
+
+}
+
+#home, #course, #blog, #account, #contact {
+    font-size: 30px;
+    transition: color 0.5s;
+    margin: 40px 20px 10px 15px;
+    
+   /* border-bottom: 2px solid red; */
+    
+    
+}
+
+
+
+#home:hover a {
+    color: black;
+}
+   
+#course:hover a {
+    color: black;
+}
+  
+#blog:hover a {
+    color: black;
+}
+  
+#account:hover a {
+    color: black;
+}
+  
+#contact:hover a {
+    color: black;
+}
+  
+
+
+
+
+#nav {
+    display: flex;
+    justify-content: right;
+    
+}
+a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.5s;
+    
+}
+
+#text-box {
+    text-align: center;
+    
+}
+
+
+#normal-text {
+    font-size: 20px;
+    color: white;
+}
+#bold-text {
+    font-size: 60px;
+    font-weight: bolder;
+    color: white;
+    font-family: 'Lora', serif;
+    line-height: 130px;
+}
+
+#text-section {
+    margin-top: 100px;
+}
+
+#button {
+    font-family: 'Poppins', sans-serif;
+    background-color: transparent;
+    text-align: center;
+    
+}
+#button-main {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 12px;
+    background-color: transparent;
+    border: none;
+    padding: 15px 30px 15px 30px;
+    border: 1px solid white;
+    margin-top: 20px;
+    transition: background-color 0.8s;
+    
+}
+
+#button-main:hover {
+    background-color: #F44336;
+}
+
+
+#course-we-offer {
+    text-align: center;
+    line-height: 22px;
+    margin-top: 100px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#sub-text {
+    color: gray;
+}
+
+#courses {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+
+#courses > div {
+    text-align: center;
+    line-height: 20px;
+    font-size: 100%;
+    font-family: 'Poppins', sans-serif;
+    width: 300px;
+    height: 150px;
+    background-color: #FFF3E3;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: box-shadow 0.5s;
+   
+}
+
+#intermediate:hover, #degree:hover, #post-graduation:hover {
+    box-shadow: 0px 0px 5px 5px #dbcccf;
+}
+
+#our-global-campus {
+    text-align: center;
+    line-height: 22px;
+    margin-top: 130px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#london-photo, #washington-photo, #newyork-photo {
+    width: 350px;
+    height: 495.71px;
+    margin: 10px 15px 0px 15px;
+    border-radius: 10px;
+}
+
+#campus-container {
+      display: flex;
+      justify-content: center;
+      justify-items: center;
+      margin-top: 45px;
+      position: relative;
+     
+}
+
+
+#newyork-text {
+    color: white;
+    width: 350px;
+    height: 495.71px;
+    text-align: center;
+    background-color: rgba(228, 72, 74, 0.75);
+    opacity: 0;
+    transition: opacity 1s, transform 1s;
+    position: absolute;
+    border-radius: 10px;
+    top: 10px;
+    bottom: 0;
+    left: 500px;
+    right: 0;
+   
+
+}
+
+#london-text {
+    color: white;
+    width: 350px;
+    height: 495.71px;
+    text-align: center;
+    background-color: rgba(228, 72, 74, 0.75);
+    opacity: 0;
+    transition: opacity 1s, transform 1s;
+    position: absolute;
+    border-radius: 10px;
+    top: 10px;
+    bottom: 0;
+    left: 120px;
+    right: 0;
+}
+
+#washington-text {
+    color: white;
+    width: 350px;
+    height: 495.71px;
+    text-align: center;
+    background-color: rgba(228, 72, 74, 0.75);
+    opacity: 0;
+    transition: opacity 1s;
+   
+    position: absolute;
+    border-radius: 10px;
+    top: 10px;
+    bottom: 0;
+    left: 880px;
+    right: 0;
+}
+
+
+#london-text > * {
+    transform: translateY(385px);
+    transition: transform 1s;
+}
+
+#newyork-text > * {
+    transform: translateY(390px);
+    transition: transform 1s;
+}
+
+#washington-text > * {
+    transform: translateY(400px);
+    transition: transform 1s;
+}
+
+#london-text:hover {
+    opacity: 1;
+}
+
+#newyork-text:hover {
+    opacity: 1;
+}
+
+#washington-text:hover {
+    opacity: 1;
+}
+#london-text:hover > * {
+    
+    transform: translateY(185px);
+}
+
+#newyork-text:hover > * {
+    
+    transform: translateY(190px);
+}
+
+#washington-text:hover > * {
+    
+    transform: translateY(200px);
+}
+
+
+
+
+#our-facilites {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin-top: 120px;
+    margin-bottom: 50px;
+}
+
+
+#facilities-container {
+    display: flex;
+    justify-content: center;
+
+}
+
+
+
+#library-photo {
+    width: 325px;
+    height: auto;
+    margin: 0 30px 0 30px;
+    border-radius: 10px;
+}
+
+#cafeteria-photo {
+    width: 325px;
+    height: auto;
+    margin: 0 30px 0 30px;
+    border-radius: 10px;
+}
+
+#basketball-photo {
+    width: 325px;
+    height: auto;
+    margin: 0 30px 0 30px;
+    border-radius: 10px;
+}
+
+#library-text {
+    width: 325px;
+    height: auto;
+    text-align: center;
+    
+}
+
+#cafeteria-text {
+    width: 325px;
+    height: auto;
+    text-align: center;
+}
+
+#basketball-text {
+    width: 325px;
+    height: auto;
+    text-align: center;
+}
+
+
+#student-says {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 120px;
+    margin-bottom: 50px;
+    
+}
+
+#review-container {
+    display: flex;
+    justify-content: center;
+}
+
+#user1-review {
+    width: 500px;
+    height: 150px;
+    background-color:#c0b4b4;
+    border-radius: 10px;
+    margin: 0 20px 0 0;
+    transition: box-shadow 0.5s;
+}
+
+#user1-review:hover {
+    box-shadow: 0px 0px 5px 5px #696263;
+}
+
+#user1-photo {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    float: left;
+    margin: 0 25px 0 0;
+}
+
+#main-review {
+    margin: 10px;
+    padding: 20px 10px;
+}
+
+#user2-review {
+    width: 500px;
+    height: 150px;
+    background-color:#c0b4b4;;
+    border-radius: 10px;
+    margin: 0 25px 0 0;
+    transition: box-shadow 0.5s;
+}
+
+#user2-review:hover {
+    box-shadow: 0px 0px 5px 5px #696263;
+}
+
+
+#enroll-us {
+    text-align: center;
+}
+
+#enroll-us > div {
+    height: 400px;
+    width: 1050px;
+    
+    margin: 150px 145px;
+}
+
+#bg-image {
+    position: absolute;
+    z-index: 1;
+}
+
+#opacity {
+ position: absolute;
+ border-radius: 15px;
+ background-color: rgb(0, 0, 0, 0.6);
+ z-index: 2;
+
+
+}
+
+#text-only {
+    position: absolute;
+    text-align: center;
+    transform: translateY(25%);
+    z-index: 3;
+}
+
+#bg-images {
+    height: 400px;
+    width: 1050px;
+    border-radius: 15px;
+}
+
+#enroll-text {
+    font-size: 40px;
+    font-weight: bolder;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+#contact2 {
+    background-color: transparent;
+    border: 1px solid white;
+    font-size: 15px;
+    color: white;
+    width: 150px;
+    height: 40px;
+    transition: background-color 0.5s;
+    cursor: pointer;
+}
+
+#contact2:hover {
+    background-color: #DD3F34;
+}
+
+
+
+
+
+
+
+
+
+
+.checked {
+    color: red;
+
+
